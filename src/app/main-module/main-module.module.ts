@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MainModuleRoutingModule } from './main-module-routing.module';
 import { MainModuleComponent } from './main-module.component';
 import { HomeComponent } from './main-module-components/home/home.component';
@@ -17,7 +17,9 @@ import { SignUpComponent } from './main-module-components/sign-up/sign-up.compon
   ],
   imports: [
     CommonModule,
-    MainModuleRoutingModule
+    MainModuleRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MainModuleModule { }
