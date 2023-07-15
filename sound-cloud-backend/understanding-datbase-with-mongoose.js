@@ -30,14 +30,14 @@ const Ali = new human({
 // Aur ajj hum apni pheli query parhengey 
 // CRUD  .save() to create, .find() .findeById(), .findOne() To Read, .update(), .updateOne() to Update, .deleteOne(), .delete() to Delete
 
-//Create
-Ali.save();
-//Read
-Ali.find()
-Ali.findOne()
-//Update
-Ali.update()
-Ali.updateOne()
-//Delete
-Ali.delete()
-Ali.deleteOne()
+// //Create
+// Ali.save();
+// //Read
+// Ali.find()
+// Ali.findOne()
+// //Update
+// Ali.update()
+// Ali.updateOne()
+// //Delete
+// Ali.delete()
+// Ali.deleteOne()

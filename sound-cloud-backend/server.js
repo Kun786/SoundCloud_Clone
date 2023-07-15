@@ -1,7 +1,7 @@
 //Block Start Dependencies
 const express = require('express');
 const cors = require('cors');
-const LoadDataBase = require('./configuration/database-configuration');
+const loadDatabse = require('./configuration/database-configuration');
 //Block End Dependencies
 
 
@@ -39,11 +39,12 @@ app.all('*', (req, res, next) => {
 
 //LoadingRoutes in Variable
 const userManagement = require('./routes/user-maganement-route') 
-
+const musicManagement = require('./routes/music-management-route')
 //LoadingRoutes in Variable
 
 //Using Routes
 app.use('/userManagement',userManagement);
+app.use('/musicManagement',musicManagement)
 //Using Routes
 
 //End Block Load Routes
@@ -76,6 +77,7 @@ app.use((error, req, res, next) => {
 
 app.listen(PORT, () => {
     console.log(`You Application has Launched from the Port 🚀 🚀 ${PORT}`);
+    loadDatabse
 })
 
 
